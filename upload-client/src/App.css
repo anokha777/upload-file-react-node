@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.ant-layout-header {
+  color: #fff;
+  font-weight: 500;
+}
+
+
+.ant-upload {
+  margin-top: 3rem;
+}
+
+.ant-upload-list {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.ant-upload-list-item-card-actions {
+  display: none;
+}
