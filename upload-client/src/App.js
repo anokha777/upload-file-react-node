@@ -3,7 +3,7 @@ import './App.css';
 // 1st method
 import { Button, Upload, Spin, message } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-import Layout, { Content, Header } from 'antd/lib/layout/layout';
+import Layout, { Content } from 'antd/lib/layout/layout';
 import { useState } from 'react';
 
 function App() {
@@ -40,21 +40,34 @@ function App() {
   return (
     <div className="App">
     <Layout>
-      <Header>CSV File Upload</Header>
+      {/* <Header>CSV File Upload</Header> */}
+      
+      <header id="header">
+        <div>
+        <a href="#dashboard">
+        <div className="logo">
+        <img src="https://ui.harmony.epsilon.com/reporting/assets/img/messaging-dark.svg" alt="logo"/>
+        </div>
+        </a>
+        </div>
+      </header>
       <Spin spinning={isLoading}>
       <Layout>
         <Content>
-              <Upload
-                action={`http://localhost:5000/upload`}
-                name= 'file'
-                listType="picture"
-                maxCount={1}
-                multiple={false}
-                onChange={onChangeDocumentUpload}
-                beforeUpload={beforeUpload}
-                >
-                <Button icon={<UploadOutlined />}>Upload CSV</Button>
-              </Upload>
+          <div className="topic">File Upload Utility</div>
+            {/* <div className="upload-container"> */}
+                <Upload
+                  action={`http://localhost:5000/upload`}
+                  name= 'file'
+                  listType="picture"
+                  maxCount={1}
+                  multiple={false}
+                  onChange={onChangeDocumentUpload}
+                  beforeUpload={beforeUpload}
+                  >
+                  <Button icon={<UploadOutlined />}>Upload CSV</Button>
+                </Upload>
+              {/* </div> */}
             </Content>
           </Layout>
         </Spin>
