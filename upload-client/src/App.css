@@ -6,12 +6,15 @@
   background-color: #f0f2f5;
 }
 
+.ant-upload-text-icon {
+  display: none;
+}
 .ant-layout-header {
   color: #fff;
   font-weight: 500;
 }
 
-.ant-upload-list {
+/* .ant-upload-list {
   width: 40%;
   margin: 0 auto;
 
@@ -19,37 +22,24 @@
   left: 50%;
   top: 22rem;
   transform: translate(-50%, -50%);
-}
+} */
 
-.ant-upload {
+/* .ant-upload {
   margin-top: 3rem;
   position: absolute;
   left: 50%;
   top: 6rem;
   transform: translate(-50%, -50%);
-}
+} */
 
-.topic {
+/* .topic {
   position: absolute;
   left: 50%;
   top: 10rem;
   transform: translate(-50%, -50%);
   font-size: 2rem;
   font-weight: 700;
-}
-
-/* .upload-container {
-  width: 300px;
-  border: 1px solid rgb(38, 49, 38);
-  padding: 50px;
-  margin: 20px;
-  position: absolute;
-  left: 50%;
-  top: 16rem;
-  transform: translate(-50%, -50%);
 } */
-
-
 
 .ant-upload-list-item-card-actions {
   display: none;
@@ -65,4 +55,4 @@ header {
   right: 0;
   z-index: 1000;
   text-align: left;
-  }
+  } 
