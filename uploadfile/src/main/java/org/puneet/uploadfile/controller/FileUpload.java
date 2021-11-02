@@ -3,8 +3,7 @@ package org.puneet.uploadfile.controller;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.util.concurrent.TimeUnit;
 
 import org.puneet.uploadfile.payload.ApiResponse;
 import org.springframework.http.HttpStatus;
@@ -24,7 +23,9 @@ public class FileUpload {
 	@PostMapping("/upload")
 	public ResponseEntity<?> handleFileUpload(@RequestParam("file") MultipartFile file) {
 		String fileName = "";
+		
 		try {
+		TimeUnit.SECONDS.sleep(5);
 //		String date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyMMddHHmmss-"));
 	    fileName =  file.getOriginalFilename();
 

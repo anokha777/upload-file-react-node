@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.css';
+/* @import '~antd/dist/antd.css';
 
 .App {
   text-align: center;
@@ -14,33 +14,6 @@
   font-weight: 500;
 }
 
-/* .ant-upload-list {
-  width: 40%;
-  margin: 0 auto;
-
-  position: absolute;
-  left: 50%;
-  top: 22rem;
-  transform: translate(-50%, -50%);
-} */
-
-/* .ant-upload {
-  margin-top: 3rem;
-  position: absolute;
-  left: 50%;
-  top: 6rem;
-  transform: translate(-50%, -50%);
-} */
-
-/* .topic {
-  position: absolute;
-  left: 50%;
-  top: 10rem;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  font-weight: 700;
-} */
-
 .ant-upload-list-item-card-actions {
   display: none;
 }
@@ -55,4 +28,73 @@ header {
   right: 0;
   z-index: 1000;
   text-align: left;
-  } 
+  }  */
+
+
+  @import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.ant-layout-header {
+  color: #fff;
+  font-weight: 500;
+}
+
+.ant-upload-list {
+  width: 40%;
+  margin: 0 auto;
+
+  position: absolute;
+  left: 50%;
+  top: 22rem;
+  transform: translate(-50%, -50%);
+}
+
+.ant-upload {
+  margin-top: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 6rem;
+  transform: translate(-50%, -50%);
+}
+
+.topic {
+  position: absolute;
+  left: 50%;
+  top: 10rem;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.upload-container {
+  width: 300px;
+  border: 1px solid rgb(38, 49, 38);
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  left: 50%;
+  top: 16rem;
+  transform: translate(-50%, -50%);
+}
+
+ .ant-upload-list-item-card-actions {
+  display: none;
+}
+
+header {
+  background: #292d33;
+  padding: 12px 30px 10px 15px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  text-align: left;
+  }
